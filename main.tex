@@ -1,0 +1,82 @@
+% =======================================================================================
+% BRAC University — Beamer presentation template
+%
+% A clean starting point for a thesis defence, a seminar or a conference talk.
+%
+% HOW TO USE
+%   1. Change the title, author and supervisor below.
+%   2. Replace img/bracu_logo.png if you are at another institution, and change the three
+%      colours at the top of config.tex to match your own logo.
+%   3. Write each section in its own file under files/ and \input it below. One file per
+%      section keeps the deck manageable and makes version control sane.
+%   4. Put references in ref.bib and cite them with \cite{key}.
+%
+% COMPILING
+%   Overleaf : set this file as the main document, compiler pdfLaTeX, references BibTeX.
+%   Locally  : latexmk -pdf main.tex
+%
+% WHAT IS WHERE
+%   config.tex   packages, colours, the institute block, the per-section contents slide
+%   files/       one .tex per section, in the order they appear below
+%   img/         logo and figures
+%   ref.bib      bibliography
+% =======================================================================================
+
+\documentclass[11pt]{beamer}
+
+%%%%%%%% theme %%%%%%%%
+% Madrid gives a title bar and a footer with author, title, date and slide number.
+% Other themes worth trying: Frankfurt, Singapore, CambridgeUS, metropolis (needs install).
+\mode<presentation> {
+\usetheme{Madrid}
+%\usecolortheme{albatross}
+}
+
+\input{config.tex}
+
+%%%%%%%% title %%%%%%%%
+% The short title in [ ] appears in the footer of every slide — keep it brief.
+\title[Short title]{Your Presentation Title}
+\subtitle{An optional subtitle that says what the work is about}
+
+%%%%%%%% author %%%%%%%%
+% The short name in [ ] also goes in the footer.
+\author[Your Name]{
+Your Name\\\vspace{0.15cm}
+\small Supervisor: Supervisor Name}
+
+\begin{document}
+
+\input{files/pre-slides.tex}
+
+%%%%%%%% slides %%%%%%%%
+% Add, remove or reorder sections here. Each \section creates a contents slide
+% (see config.tex) and an entry in the table of contents.
+\section{Introduction}
+\input{files/01_introduction.tex}
+
+\section{Methodology}
+\input{files/02_methodology.tex}
+
+\section{Results}
+\input{files/03_results.tex}
+
+\section{Conclusion}
+\input{files/04_conclusion.tex}
+
+%%%%%%%% references %%%%%%%%
+% \nocite{*} would list everything in ref.bib, cited or not. Leave it off to list only
+% what you actually cite.
+\begin{frame}[allowframebreaks]{References}
+\footnotesize
+\bibliographystyle{unsrt}
+\bibliography{ref}
+\end{frame}
+
+%%%%%%%% closing slide %%%%%%%%
+% Repeating the title slide gives the audience something to look at during questions.
+\begin{frame}
+\titlepage
+\end{frame}
+
+\end{document}

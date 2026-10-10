@@ -1,0 +1,55 @@
+% Section 2 — Methodology.
+% Demonstrates: two columns, a figure, and an equation.
+
+\begin{frame}{Approach}
+
+% Two columns. Handy for text beside a figure.
+\begin{columns}[T]
+\begin{column}{0.52\textwidth}
+\begin{block}{Steps}
+\begin{itemize}
+    \item Data collection
+    \item Pre-processing
+    \item Model fitting
+    \item Validation
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.44\textwidth}
+\begin{block}{Why this way}
+\begin{itemize}
+    \item A reason, not a restatement
+    \item The alternative you rejected
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{A figure}
+
+% Put image files in img/. scale= or width= both work; width relative to \linewidth
+% travels better between screens and projectors.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\linewidth]{img/bracu_logo.png}
+\caption{Replace this with your own figure. Captions are numbered automatically.}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{An equation}
+
+\begin{block}{}
+One displayed equation per slide is usually the limit an audience can absorb:
+\begin{equation}
+    \hat{y} = \sigma\!\left(\beta_0 + \sum_{i=1}^{n} \beta_i x_i\right)
+\end{equation}
+Define every symbol you use, in words, immediately after it.
+\end{block}
+
+\end{frame}

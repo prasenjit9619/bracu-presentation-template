@@ -1,0 +1,66 @@
+% ---------------------------------------------------------------------------------------
+% Packages, colours and the title-block institute.
+%
+% Everything that is not slide content lives here, so the files in files/ stay readable.
+% Change the colours in one place below and the whole deck follows.
+% ---------------------------------------------------------------------------------------
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}     % proper table rules: \toprule \midrule \bottomrule
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{comment}      % \begin{comment} ... \end{comment} to park a draft slide
+
+% --- Colours ---------------------------------------------------------------------------
+% None. The deck uses the Madrid theme's own palette, which is well balanced and prints
+% legibly, so nothing is overridden here.
+%
+% If you want a different look, the least invasive route is a colour theme — uncomment one
+% in main.tex, for example \usecolortheme{albatross}, \usecolortheme{seahorse} or
+% \usecolortheme{dolphin}.
+%
+% To match an institution's own colours instead, add something like the following and
+% adjust the hex values. Pick them from the logo file with any image editor's colour
+% picker rather than guessing. One warning: Madrid draws the title on a coloured panel, so
+% a title foreground in the same colour renders an invisible title.
+%
+%   \usepackage{xcolor}
+%   \definecolor{primary}{HTML}{1F58A9}
+%   \setbeamercolor{structure}{fg=primary}
+%   \setbeamercolor{frametitle}{bg=primary,fg=white}
+%   \setbeamercolor{title}{bg=primary,fg=white}
+%   \setbeamercolor{block title}{bg=primary,fg=white}
+
+% The little navigation arrows are never used in a talk and add visual noise.
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+
+% --- Title block --------------------------------------------------------------------------
+% Appears on the title slide. Replace the logo in img/ and the two lines below.
+\institute[BRAC University]
+{
+% Keep the logo this size or smaller. The title block holds logo, institute, title,
+% subtitle, author and date; at scale 0.35 a two-line subtitle pushes it off the slide.
+\vspace*{-0.5cm}
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.28]{img/bracu_logo.png}
+\end{figure}
+BRAC University\\
+Department of Computer Science \& Engineering
+}
+\date{\today}
+
+% --- A contents slide before each section -------------------------------------------------
+% Useful in a long talk, tiring in a short one: each section costs a slide. Comment this
+% block out if your deck has many short sections.
+\AtBeginSection[]
+{
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
