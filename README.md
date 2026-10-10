@@ -4,8 +4,11 @@ A clean, ready-to-use **BRACU presentation template** for a thesis defence, a se
 conference talk at BRAC University. Written in LaTeX Beamer, in the university's colours,
 with one file per section and a working bibliography.
 
-**[→ Open it in Overleaf](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-beamer-template/archive/refs/heads/main.zip&engine=pdflatex)**
-— one click, no download, no account setup beyond a free Overleaf login.
+**[→ Open the Overleaf project](https://www.overleaf.com/read/zpygvzwcgdxw#ce8602)**
+— read-only; use **Menu → Copy Project** to get your own editable copy.
+
+**[→ Or import this repository straight into Overleaf](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-beamer-template/archive/refs/heads/main.zip&engine=pdflatex)**
+— one click, no download, compiler already set to pdfLaTeX.
 
 ![compiler: pdfLaTeX](https://img.shields.io/badge/compiler-pdfLaTeX-blue)
 ![licence: MIT](https://img.shields.io/badge/licence-MIT-green)
@@ -32,9 +35,15 @@ layout. This one is deliberately plain:
 
 ### In Overleaf (easiest)
 
-Click **[Open in Overleaf](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-beamer-template/archive/refs/heads/main.zip&engine=pdflatex)**.
-The project opens as a copy in your account, already set to pdfLaTeX. Nothing else to
-configure.
+Two routes, both free.
+
+Open the **[live Overleaf project](https://www.overleaf.com/read/zpygvzwcgdxw#ce8602)** and
+choose **Menu → Copy Project**. You get an editable copy in your own account, exactly as
+the author maintains it.
+
+Or **[import this repository](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-beamer-template/archive/refs/heads/main.zip&engine=pdflatex)**
+directly from GitHub, which always pulls the latest commit and arrives with the compiler
+already set to pdfLaTeX.
 
 If you would rather do it by hand: download this repository as a ZIP, then in Overleaf
 choose **New Project → Upload Project**, set the compiler to **pdfLaTeX** under
@@ -105,6 +114,22 @@ attribution required — though a star is welcome.
 
 Issues and pull requests are welcome, particularly fixes for anything that breaks in a
 current TeX Live, and Bangla-language support if someone wants to add it.
+
+## Credits
+
+This template is a thin layer over other people's work, and it is worth being precise
+about whose.
+
+**Beamer and the Madrid theme** are by **Till Tantau**, who created Beamer and wrote the
+Madrid theme in 2007; Beamer is now maintained by Joseph Wright, Vedran Miletić and
+contributors. Everything that makes these slides look like Beamer slides — the structure,
+the navigation, the colour themes beneath Madrid — is theirs. Beamer is distributed under
+the LaTeX Project Public License and the GNU GPL, and is not redistributed here: this
+repository only contains a document that loads it.
+
+What is added here is modest by comparison: BRAC University's colours and logo, the
+institute block, the split of sections into one file each, a wired-up bibliography, and
+documentation.
 
 ## Licence
 
