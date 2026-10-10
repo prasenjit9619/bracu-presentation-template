@@ -7,7 +7,7 @@ with one file per section and a working bibliography.
 **[→ Open the Overleaf project](https://www.overleaf.com/read/zpygvzwcgdxw#ce8602)**
 — read-only; use **Menu → Copy Project** to get your own editable copy.
 
-**[→ Or import this repository straight into Overleaf](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-beamer-template/archive/refs/heads/main.zip&engine=pdflatex)**
+**[→ Or import this repository straight into Overleaf](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-presentation-template/archive/refs/heads/main.zip&engine=pdflatex)**
 — one click, no download, compiler already set to pdfLaTeX.
 
 ![compiler: pdfLaTeX](https://img.shields.io/badge/compiler-pdfLaTeX-blue)
@@ -41,7 +41,7 @@ Open the **[live Overleaf project](https://www.overleaf.com/read/zpygvzwcgdxw#ce
 choose **Menu → Copy Project**. You get an editable copy in your own account, exactly as
 the author maintains it.
 
-Or **[import this repository](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-beamer-template/archive/refs/heads/main.zip&engine=pdflatex)**
+Or **[import this repository](https://www.overleaf.com/docs?snip_uri=https://github.com/prasenjit9619/bracu-presentation-template/archive/refs/heads/main.zip&engine=pdflatex)**
 directly from GitHub, which always pulls the latest commit and arrives with the compiler
 already set to pdfLaTeX.
 
@@ -54,8 +54,8 @@ choose **New Project → Upload Project**, set the compiler to **pdfLaTeX** unde
 With TeX Live or MacTeX installed:
 
 ```bash
-git clone https://github.com/prasenjit9619/bracu-beamer-template.git
-cd bracu-beamer-template
+git clone https://github.com/prasenjit9619/bracu-presentation-template.git
+cd bracu-presentation-template
 latexmk -pdf main.tex
 ```
 
